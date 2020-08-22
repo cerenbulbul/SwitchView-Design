@@ -15,4 +15,16 @@
         android:layout_height="wrap_content">
     </Switch>
 
-</LinearLayout>
+    <com.sigma.niceswitch.NiceSwitch
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:switcher_on_color="#AFAEAE"
+        app:switcher_off_color="#636363"
+        app:switcher_icon_color="#FFF" />
+
+
+
+</LinearLayout >
