@@ -38,6 +38,23 @@
         />
 
 
+    <com.rm.rmswitch.RMSwitch
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/your_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:forceAspectRatio="false"
+        app:enabled="true"
+        app:switchDesign="android"
+        app:switchBkgCheckedColor="#2FD52F"
+        app:switchBkgNotCheckedColor="#B1AFAF"
+        app:switchToggleCheckedColor="#4E4D4D"
+        app:switchToggleCheckedImage="@drawable/ic_baseline_bluetooth_disabled_24"
+        app:switchToggleNotCheckedColor="#4E4D4D"
+        app:switchToggleNotCheckedImage="@drawable/ic_baseline_bluetooth_24"/>
+
+
 
 
 </LinearLayout >
