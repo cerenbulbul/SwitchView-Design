@@ -55,6 +55,27 @@
         app:switchToggleNotCheckedImage="@drawable/ic_baseline_bluetooth_24"/>
 
 
+    <!-- Three states switch -->
+    <com.rm.rmswitch.RMTristateSwitch
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/your_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:forceAspectRatio="false"
+        app:state="left"
+        app:enabled="true"
+        app:switchDesign="large"
+        app:switchBkgLeftColor="#B1AFAF"
+        app:switchBkgRightColor="#B1AFAF"
+        app:switchToggleLeftColor="#6E6C6C"
+        app:switchToggleLeftImage="@drawable/ic_baseline_skip_previous_24"
+        app:switchToggleMiddleImage="@drawable/ic_baseline_stop_24"
+        app:switchToggleMiddleColor="#6E6C6C"
+        app:switchBkgMiddleColor="#B1AFAF"
+        app:switchToggleRightColor="#6E6C6C"
+        app:switchToggleRightImage="@drawable/ic_baseline_skip_next_24"/>
+
 
 
 </LinearLayout >
