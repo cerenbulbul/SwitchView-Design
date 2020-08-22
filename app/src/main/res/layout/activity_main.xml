@@ -25,6 +25,19 @@
         app:switcher_off_color="#636363"
         app:switcher_icon_color="#FFF" />
 
+    <com.rm.rmswitch.RMSwitch
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/rm_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:switchBkgCheckedColor="#2FD52F"
+        app:switchBkgNotCheckedColor="#B1AFAF"
+        app:switchToggleCheckedColor="#FFF"
+        app:switchToggleNotCheckedColor="#FFF"
+        />
+
+
 
 
 </LinearLayout >
