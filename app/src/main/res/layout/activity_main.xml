@@ -1,81 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Switch
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </Switch>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <com.sigma.niceswitch.NiceSwitch
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:id="@+id/switcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:switcher_on_color="#AFAEAE"
-        app:switcher_off_color="#636363"
-        app:switcher_icon_color="#FFF" />
+        <Switch
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Switch>
 
-    <com.rm.rmswitch.RMSwitch
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:id="@+id/rm_switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:switchBkgCheckedColor="#2FD52F"
-        app:switchBkgNotCheckedColor="#B1AFAF"
-        app:switchToggleCheckedColor="#FFF"
-        app:switchToggleNotCheckedColor="#FFF"
-        />
+        <com.sigma.niceswitch.NiceSwitch
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switcher_on_color="#AFAEAE"
+            app:switcher_off_color="#636363"
+            app:switcher_icon_color="#FFF" />
 
-
-    <com.rm.rmswitch.RMSwitch
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:id="@+id/your_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:forceAspectRatio="false"
-        app:enabled="true"
-        app:switchDesign="android"
-        app:switchBkgCheckedColor="#2FD52F"
-        app:switchBkgNotCheckedColor="#B1AFAF"
-        app:switchToggleCheckedColor="#4E4D4D"
-        app:switchToggleCheckedImage="@drawable/ic_baseline_bluetooth_disabled_24"
-        app:switchToggleNotCheckedColor="#4E4D4D"
-        app:switchToggleNotCheckedImage="@drawable/ic_baseline_bluetooth_24"/>
+        <com.rm.rmswitch.RMSwitch
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/rm_switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switchBkgCheckedColor="#2FD52F"
+            app:switchBkgNotCheckedColor="#B1AFAF"
+            app:switchToggleCheckedColor="#FFF"
+            app:switchToggleNotCheckedColor="#FFF"
+            />
 
 
-    <!-- Three states switch -->
-    <com.rm.rmswitch.RMTristateSwitch
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:id="@+id/your_id2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:forceAspectRatio="false"
-        app:state="left"
-        app:enabled="true"
-        app:switchDesign="large"
-        app:switchBkgLeftColor="#B1AFAF"
-        app:switchBkgRightColor="#B1AFAF"
-        app:switchToggleLeftColor="#6E6C6C"
-        app:switchToggleLeftImage="@drawable/ic_baseline_skip_previous_24"
-        app:switchToggleMiddleImage="@drawable/ic_baseline_stop_24"
-        app:switchToggleMiddleColor="#6E6C6C"
-        app:switchBkgMiddleColor="#B1AFAF"
-        app:switchToggleRightColor="#6E6C6C"
-        app:switchToggleRightImage="@drawable/ic_baseline_skip_next_24"/>
+        <com.rm.rmswitch.RMSwitch
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/your_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:forceAspectRatio="false"
+            app:enabled="true"
+            app:switchDesign="android"
+            app:switchBkgCheckedColor="#2FD52F"
+            app:switchBkgNotCheckedColor="#B1AFAF"
+            app:switchToggleCheckedColor="#4E4D4D"
+            app:switchToggleCheckedImage="@drawable/ic_baseline_bluetooth_disabled_24"
+            app:switchToggleNotCheckedColor="#4E4D4D"
+            app:switchToggleNotCheckedImage="@drawable/ic_baseline_bluetooth_24"/>
+
+
+        <!-- Three states switch -->
+        <com.rm.rmswitch.RMTristateSwitch
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/your_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:forceAspectRatio="false"
+            app:state="left"
+            app:enabled="true"
+            app:switchDesign="large"
+            app:switchBkgLeftColor="#B1AFAF"
+            app:switchBkgRightColor="#B1AFAF"
+            app:switchToggleLeftColor="#6E6C6C"
+            app:switchToggleLeftImage="@drawable/ic_baseline_skip_previous_24"
+            app:switchToggleMiddleImage="@drawable/ic_baseline_stop_24"
+            app:switchToggleMiddleColor="#6E6C6C"
+            app:switchBkgMiddleColor="#B1AFAF"
+            app:switchToggleRightColor="#6E6C6C"
+            app:switchToggleRightImage="@drawable/ic_baseline_skip_next_24"/>
+
+    </LinearLayout>
 
 
 
-</LinearLayout >
+</RelativeLayout >
